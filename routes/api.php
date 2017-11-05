@@ -18,4 +18,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::post('search', 'WebService\ProductoController@search');
-Route::get('stadistic', 'WebService\ProductoController@getStadistic');
+Route::post('stadistic', 'WebService\ProductoController@getStadistic');
