@@ -13,4 +13,4 @@
 
 
 Route::get('/', 'LoadViews@search');
-Route::get('/stadistic', 'LoadViews@stadistic');
+Route::get('stadistic', 'LoadViews@stadistic');
