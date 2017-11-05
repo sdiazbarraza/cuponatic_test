@@ -6,8 +6,8 @@
 	<meta name="csrf-token" content="{{ csrf_token() }}" />
 	<title>Buscador de Productos</title>
 
-	{!! Html::style('assets/css/bootstrap.css') !!}
-
+	{!! Html::style(secure_asset('assets/css/bootstrap.css')) !!}
+	
 	<!-- Fonts -->
 	<link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
 
