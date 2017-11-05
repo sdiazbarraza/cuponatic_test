@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'LoadViews@search');
+Route::get('/stadistic', 'LoadViews@stadistic');
