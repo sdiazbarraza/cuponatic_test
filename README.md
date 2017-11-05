@@ -62,3 +62,5 @@ Search product by keyword
 ```
 //host:PORT/api/search
 ```
+
+### NOTE:File csv to modified and add PK (id_producto) 
