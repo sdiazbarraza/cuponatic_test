@@ -14,7 +14,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-       if($this->app->environment() === 'production'){ $this->app['request']->server->set('HTTPS', true); }
+       if($this->app->environment() === 'production'){ 
+            $this->app['request']->server->set('HTTPS', true); 
+            
+        }
     }
 
     /**
@@ -34,7 +37,13 @@ class AppServiceProvider extends ServiceProvider
 
         }else{
             \Config::set('app.debug', true);
-            \Config::set('app.env','production');            
+            \Config::set('app.env','production');
+            \Config::set('database.connections.mysql.host', 'sql10.freemysqlhosting.net');
+            \Config::set('database.connections.mysql.database', 'sql10203202');       
+            \Config::set('database.connections.mysql.username','sql10203202');
+            \Config::set('database.connections.mysql.password','YrDa4ePZkH');
+            \Config::set('database.connections.mysql.password',3306);
+            
         }  
 
    }
