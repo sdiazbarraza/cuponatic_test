@@ -34,7 +34,7 @@ class AppServiceProvider extends ServiceProvider
         if ($ip=="127.0.0.1" ||$ip=="::1"  ){
             \Config::set('app.debug', true);
             \Config::set('app.env','local');
-
+       
         }else{
             \Config::set('app.debug', true);
             \Config::set('app.env','production');
@@ -42,7 +42,7 @@ class AppServiceProvider extends ServiceProvider
             \Config::set('database.connections.mysql.database', 'sql10203202');       
             \Config::set('database.connections.mysql.username','sql10203202');
             \Config::set('database.connections.mysql.password','YrDa4ePZkH');
-            \Config::set('database.connections.mysql.password',3306);
+            \Config::set('database.connections.mysql.port',3306);
             
         }  
 
