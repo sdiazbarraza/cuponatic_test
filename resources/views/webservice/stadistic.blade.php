@@ -1,6 +1,6 @@
 @extends('app')
 @section('js')
-{!! Html::script('assets/js/proccessStadistics.js') !!}
+{!! Html::script('assets/js/proccessStadistics.js',array(),true) !!}
 @endsection
 @section('content')
 <div class="container">
