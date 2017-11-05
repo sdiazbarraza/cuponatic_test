@@ -28,7 +28,7 @@ class AppServiceProvider extends ServiceProvider
         $request->setTrustedProxies(['proxyip']);
         $ip=$request->ip();
 
-        if ($ip=="127.0.0.1" ||$ip=="::1" || $ip=="myip" ){
+        if ($ip=="127.0.0.1" ||$ip=="::1"  ){
             \Config::set('app.debug', true);
             \Config::set('app.env','local');
 
