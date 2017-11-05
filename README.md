@@ -48,8 +48,7 @@ application/json
 ```
 {"field":"value"..}
 ```
-```
-## Method Allowed Api-Rest
+## Method Allowed Webservice
 ```
 GET,POST
 ```
