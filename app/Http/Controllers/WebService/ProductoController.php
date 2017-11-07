@@ -6,6 +6,7 @@ use App\Palabra;
 use App\PalabraProducto;
 use App\Http\Resources\Producto as ProductoResource;
 use Illuminate\Http\Request;
+use App\Http\Requests\SearchKeyword;
 use App\Http\Controllers\Controller;
 
 class ProductoController extends Controller
@@ -19,10 +20,10 @@ class ProductoController extends Controller
 		$this->productoModel= new Producto;
 	}
 
-    public function search(Request $request)
+    public function search(SearchKeyword $request)
     {
     	$input=$request->all();
-        $textPost=$input["keyword"];
+        $textPost=strtolower($input["keyword"]);
     	$collectResult=$this->productoModel->searchProduct($textPost);
     	if($collectResult->count()>0){
     		$idWord=$this->palabraModel->getIdWord($textPost);

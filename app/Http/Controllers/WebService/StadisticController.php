@@ -5,7 +5,7 @@ use App\Http\Resources\PalabraProducto as PalabraProductoResource;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class ProductoController extends Controller
+class StadisticController extends Controller
 {
 	private $palabraModel;
 	private $productoModel;
