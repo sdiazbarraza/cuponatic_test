@@ -5,7 +5,6 @@ use App\Producto;
 use App\Palabra;
 use App\PalabraProducto;
 use App\Http\Resources\Producto as ProductoResource;
-use App\Http\Resources\PalabraProducto as PalabraProductoResource;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -41,11 +40,4 @@ class ProductoController extends Controller
     	}
     	return new ProductoResource($collectResult);
     }
-    public function getStadistic(Request $request)
-    {
-        $collectResult=$this->palabraProductoModel->getStadistic();
-        return new PalabraProductoResource($collectResult);
-        
-    }
-
 }
